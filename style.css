@@ -1,270 +1,72 @@
-/* ---------------------------------------------------
-   Totally Sports Insurance
-   Global Stylesheet (style.css)
-   --------------------------------------------------- */
-
-/* --- Base setup --- */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* --- LOGO --- */
+.logo img {
+  height: 100px; /* doubled from ~50px */
+  transition: transform 0.3s ease;
+}
+.logo img:hover {
+  transform: scale(1.05);
 }
 
-html, body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #fff;
-  color: #333;
-  line-height: 1.6;
-  scroll-behavior: smooth;
-}
-
-/* --- Links --- */
-a {
-  color: inherit;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-a:hover {
-  color: #ff6600;
-}
-
-/* --- Layout --- */
-section {
-  padding: 4em 1em;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* --- Header / Navigation --- */
-header {
-  background: #000;
-  color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-}
-
-.logo span {
-  font-size: 1.4em;
-  font-weight: 700;
-  color: #ff6600;
-}
-
-.nav-links {
-  display: flex;
-  gap: 1.5em;
-  font-weight: 500;
-}
-
-.nav-links a {
-  color: #fff;
-  transition: color 0.2s ease;
-}
-
-.nav-links a:hover {
-  color: #ff6600;
-}
-
-.cta .btn-orange {
-  font-size: 0.95em;
-}
-
-/* --- Buttons --- */
-.btn-orange {
-  background-color: #ff6600;
-  color: #fff;
-  padding: 0.7em 1.4em;
-  border: none;
-  border-radius: 4px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-.btn-orange:hover {
-  background-color: #e65500;
-}
-
-/* --- Hero Section --- */
+/* --- HERO WITH SLIDER --- */
 .hero {
-  background: #000;
+  position: relative;
+  height: 550px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: heroSlider 18s infinite;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
   color: #fff;
   text-align: center;
-  padding: 6em 1em;
 }
 
-.hero h1 {
-  font-size: 2.5em;
+.hero-content h1 {
+  font-size: 2.8em;
   font-weight: 700;
   margin-bottom: 0.5em;
 }
 
-.hero p {
+.hero-content p {
   font-size: 1.2em;
   margin-bottom: 1em;
-  font-weight: 400;
 }
 
-/* --- Generic Section Styles --- */
-.section-title {
-  text-align: center;
-  color: #ff6600;
-  font-weight: 700;
-  margin-bottom: 1em;
-}
-
-.section-subtitle {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto 2em;
-  font-weight: 400;
-  color: #555;
-}
-
-/* --- Cover Grid --- */
-.cover-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2em;
-}
-
-.cover-card {
-  background: #f9f9f9;
-  padding: 2em;
-  border-radius: 8px;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
-}
-
-.cover-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transform: translateY(-3px);
-}
-
-.cover-card h3 {
-  color: #ff6600;
-  margin-bottom: 0.5em;
-  font-weight: 600;
-}
-
-.cover-card p {
-  color: #444;
-  font-size: 0.95em;
-  line-height: 1.5;
-}
-
-/* --- Mission Section --- */
-#our-mission {
-  background: #f4f4f4;
-}
-
-/* --- Sports Covered --- */
-#sports-covered ul {
-  max-width: 700px;
-  margin: 2em auto;
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 0.8em 1.5em;
-}
-
-#sports-covered li {
-  color: #333;
-  font-weight: 500;
-}
-
-/* --- FAQs --- */
-#faqs {
-  background: #f4f4f4;
-}
-
-#faqs h3 {
-  color: #ff6600;
-  margin-top: 1.5em;
-  margin-bottom: 0.4em;
-  font-weight: 600;
-}
-
-/* --- Contact / Quote Form --- */
-#contact, #get-quote {
-  text-align: center;
-}
-
-form {
-  max-width: 500px;
-  margin: 2em auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-form input,
-form textarea {
-  padding: 0.8em;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1em;
-}
-
-form textarea {
-  resize: vertical;
-}
-
-/* --- Footer --- */
-footer {
-  background: #111;
-  color: #ccc;
-  padding: 2em 1em;
-  text-align: center;
-  font-size: 0.95em;
-}
-
-footer a {
-  color: #ff9900;
-  font-weight: 500;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* --- Responsive --- */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 1em;
+/* --- HERO SLIDER ANIMATION --- */
+@keyframes heroSlider {
+  0% {
+    background-image: url('images/hero1.jpg');
   }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
+  33% {
+    background-image: url('images/hero2.jpg');
   }
-
-  .hero h1 {
-    font-size: 2em;
+  66% {
+    background-image: url('images/hero3.jpg');
   }
-
-  .hero p {
-    font-size: 1em;
+  100% {
+    background-image: url('images/hero1.jpg');
   }
 }
-
