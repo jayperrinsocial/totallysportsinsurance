@@ -3,132 +3,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Totally Sports Insurance | Specialist Sports Insurance for Players & Clubs</title>
-  <meta name="description" content="Totally Sports Insurance provides tailored cover for sports clubs, players, and coaches. Protect your team today with specialist insurance solutions." />
-  
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Totally Sports Insurance | We specialise in Sports Insurance</title>
+  <meta name="description" content="Protect Yourself Against Injury With Your Own Bespoke Sports Insurance" />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="style.css" />
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      color: #1a1a1a;
-      scroll-behavior: smooth;
-    }
+    /* quick inline theming fallback */
+    body { margin:0; font-family: Arial, sans-serif; color: #333; background: #fff; }
+    a { text-decoration: none; color: inherit; }
+    header, nav, section, footer { width:100%; }
+    .btn-orange { background-color: #ff6600; color: white; padding: 0.6em 1.2em; border: none; border-radius: 4px; }
+    .btn-orange:hover { background-color: #e65500; }
+    .hero { background: black; color: white; text-align: center; padding: 5em 1em; }
+    .hero h1 { font-size: 2.5em; margin-bottom: 0.5em; }
+    .hero p { font-size: 1.2em; margin-bottom: 1em; }
+    .section { padding: 4em 1em; }
+    .cover-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 1.5em; }
+    .cover-card { background: #f9f9f9; padding: 1.5em; border-radius: 8px; }
+    .footer { background: #222; color: #ccc; padding: 2em 1em; text-align: center; }
+    .footer a { color: #ff9900; }
+    /* etc — you’ll move these into style.css later */
   </style>
+
 </head>
+<body>
 
-<body class="bg-white text-gray-800">
-
-  <!-- HEADER -->
-  <header class="fixed w-full bg-white shadow-md z-50">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="#" class="flex items-center space-x-2">
-        <img src="images/logo.png" alt="Totally Sports Insurance logo" class="h-10 w-auto">
-        <span class="font-bold text-lg text-blue-700">Totally Sports Insurance</span>
-      </a>
-
-      <nav class="hidden md:flex space-x-8 text-sm font-medium">
-        <a href="#about" class="hover:text-blue-700">About</a>
-        <a href="#cover" class="hover:text-blue-700">Cover</a>
-        <a href="#benefits" class="hover:text-blue-700">Benefits</a>
-        <a href="#contact" class="hover:text-blue-700">Contact</a>
-      </nav>
-
-      <a href="#contact" class="hidden md:inline-block bg-blue-700 text-white px-5 py-2 rounded-full hover:bg-blue-800 transition">
-        Get a Quote
-      </a>
-    </div>
+  <header>
+    <nav style="display:flex; justify-content:space-between; align-items:center; max-width: 1200px; margin: auto; padding: 1em;">
+      <div class="logo">
+        <a href="/">
+          <img src="images/logo.png" alt="Totally Sports Insurance" style="height: 50px; vertical-align: middle;">
+          <span style="vertical-align: middle; font-size:1.4em; font-weight:bold; color: #ff6600;">Totally Sports</span>
+        </a>
+      </div>
+      <div class="nav-links" style="display:flex; gap:1em;">
+        <a href="#">Home</a>
+        <a href="#types-of-cover">Types Of Cover</a>
+        <a href="#our-mission">Our Mission</a>
+        <a href="#sports-covered">Sports Covered</a>
+        <a href="#faqs">FAQs</a>
+      </div>
+      <div class="cta">
+        <a href="#get-quote" class="btn-orange">Get A Quote</a>
+      </div>
+    </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="pt-28 pb-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-6 text-blue-800">
-        Protect Your Game with Specialist Sports Insurance
-      </h1>
-      <p class="text-lg text-gray-600 mb-8">
-        Tailored insurance solutions for players, clubs, and teams — giving you confidence on and off the field.
-      </p>
-      <a href="#contact" class="inline-block bg-blue-700 text-white px-8 py-3 rounded-full text-lg hover:bg-blue-800 transition">
-        Get Started
-      </a>
+  <section class="hero">
+    <h1>WELCOME TO TOTALLY SPORTS INSURANCE</h1>
+    <p>Protect Yourself Against Injury With Your Own Bespoke Sports Insurance</p>
+    <a href="#get-quote" class="btn-orange">GET A QUOTE</a>
+    <p style="margin-top:1em; font-size:1em;">0161 428 6472</p>
+  </section>
+
+  <section id="types-of-cover" class="section">
+    <h2 style="text-align:center; color:#ff6600;">We specialise in <strong>Sports Insurance</strong></h2>
+    <p style="text-align:center; max-width: 700px; margin: auto;">Are you invincible? – It’s inevitable that the sports we love to do will at some time or another have an impact on our lives. By giving yourself a financial safety net, we can help insure your future with a bespoke sports injury and sickness plan that does exactly what it’s supposed to when you need it most.</p>
+    <div class="cover-grid" style="margin-top:2em;">
+      <div class="cover-card">
+        <h3>Motocross</h3>
+        <p>Personal injury cover starts immediately with nothing to pay today, we can arrange it for you very easily.</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="cover-card">
+        <h3>Rugby</h3>
+        <p>Arrange rugby player insurance that gives you financial protection if you were unable to work because of injury.</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="cover-card">
+        <h3>Mountain Biking</h3>
+        <p>Personal injury cover starts immediately with nothing to pay today, we can arrange it around your needs.</p>
+        <a href="#">Learn More</a>
+      </div>
+      <!-- you’d continue similarly with other sports: Enduro, Football, BMX, etc. -->
     </div>
   </section>
 
-  <!-- ABOUT / WHY CHOOSE US -->
-  <section id="about" class="py-20">
-    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-      <div>
-        <h2 class="text-3xl font-bold text-blue-800 mb-4">Specialists in Sports Insurance</h2>
-        <p class="text-gray-600 mb-6">
-          With years of experience insuring athletes, coaches, and clubs, Totally Sports Insurance offers tailored coverage designed around the unique risks of sport.
-        </p>
-        <ul class="space-y-3 text-gray-700">
-          <li>✔️ Player personal accident cover</li>
-          <li>✔️ Club and team liability insurance</li>
-          <li>✔️ Equipment protection and travel cover</li>
-        </ul>
-      </div>
-      <div class="flex justify-center">
-        <img src="images/players-team.jpg" alt="Sports team" class="rounded-2xl shadow-md w-full max-w-md">
-      </div>
+  <section id="our-mission" class="section" style="background:#f4f4f4;">
+    <h2 style="text-align:center; color:#ff6600;">OUR MISSION</h2>
+    <p style="max-width: 700px; margin: 1em auto; text-align:center;">Our mission is finding the right insurance solution for our customers. Using our expertise to find insurance that is affordable, and that provides financial peace of mind, putting your interests first in a jargon-free language.</p>
+  </section>
+
+  <section id="sports-covered" class="section">
+    <h2 style="text-align:center; color:#ff6600;">SPORTS WE COVER</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">Here’s a list of the main sports that can be protected. If your sport doesn’t appear here, that doesn’t mean we can’t cover it — contact us to find out more.</p>
+    <ul style="max-width:600px; margin:2em auto; list-style:none; padding:0; columns:2; gap:1em;">
+      <li>Abseiling</li>
+      <li>American Football</li>
+      <li>Banger Racing</li>
+      <li>Baseball</li>
+      <li>BMX</li>
+      <li>Boxing</li>
+      <li>Mountain Biking</li>
+      <li>Rugby</li>
+      <li>Skateboarding</li>
+      <li>...</li>
+    </ul>
+  </section>
+
+  <section id="faqs" class="section" style="background:#f4f4f4;">
+    <h2 style="text-align:center; color:#ff6600;">FAQs</h2>
+    <div style="max-width:800px; margin:auto; text-align:left;">
+      <h3>Q: How instantly can I get cover?</h3>
+      <p>A: Some cover options start immediately with nothing to pay today (depending on sport and criteria).</p>
+      <h3>Q: What if my sport isn’t listed?</h3>
+      <p>A: Even if your sport isn’t listed, contact us — we might still be able to arrange cover.</p>
+      <!-- more Q&A entries from the live site -->
     </div>
   </section>
 
-  <!-- COVER OPTIONS -->
-  <section id="cover" class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold text-blue-800 mb-12">Types of Cover We Offer</h2>
-      <div class="grid md:grid-cols-3 gap-10">
-        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-3 text-blue-700">Player Insurance</h3>
-          <p class="text-gray-600">Protection against injuries, accidents, and medical costs while playing or training.</p>
-        </div>
-        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-3 text-blue-700">Club Insurance</h3>
-          <p class="text-gray-600">Comprehensive cover for clubs and associations — from liability to equipment damage.</p>
-        </div>
-        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold mb-3 text-blue-700">Coach & Volunteer Cover</h3>
-          <p class="text-gray-600">Protection for coaches, trainers, and volunteers during sessions and events.</p>
-        </div>
-      </div>
-    </div>
+  <section id="get-quote" class="section" style="text-align:center;">
+    <h2 style="color:#ff6600;">Request a Callback / Quote</h2>
+    <form style="max-width:500px; margin:2em auto; display:flex; flex-direction:column; gap:1em;">
+      <input type="text" name="name" placeholder="Name" required style="padding:0.8em; border:1px solid #ccc; border-radius:4px;">
+      <input type="text" name="phone" placeholder="Phone" required style="padding:0.8em; border:1px solid #ccc; border-radius:4px;">
+      <input type="email" name="email" placeholder="Email" required style="padding:0.8em; border:1px solid #ccc; border-radius:4px;">
+      <textarea name="message" rows="4" placeholder="Reason for Callback / Message" style="padding:0.8em; border:1px solid #ccc; border-radius:4px;"></textarea>
+      <button type="submit" class="btn-orange">Request Callback</button>
+    </form>
   </section>
 
-  <!-- CONTACT / QUOTE FORM -->
-  <section id="contact" class="py-20">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center text-blue-800 mb-10">Request a Quote</h2>
-      <form class="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow space-y-6">
-        <div class="grid md:grid-cols-2 gap-6">
-          <input type="text" placeholder="Full Name" class="border border-gray-300 rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-blue-700 outline-none" required>
-          <input type="email" placeholder="Email Address" class="border border-gray-300 rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-blue-700 outline-none" required>
-        </div>
-        <input type="text" placeholder="Club or Organisation" class="border border-gray-300 rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-blue-700 outline-none">
-        <textarea rows="5" placeholder="Tell us about your cover needs..." class="border border-gray-300 rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-blue-700 outline-none"></textarea>
-        <button type="submit" class="w-full bg-blue-700 text-white py-3 rounded-full font-semibold hover:bg-blue-800 transition">
-          Submit Request
-        </button>
-      </form>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-blue-900 text-gray-100 py-10">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-      <p>&copy; <span id="year"></span> Totally Sports Insurance. All rights reserved.</p>
-      <div class="flex space-x-4 text-sm">
-        <a href="#" class="hover:text-white">Privacy Policy</a>
-        <a href="#" class="hover:text-white">Terms</a>
-      </div>
-    </div>
+  <footer class="footer">
+    <p>Totally Sports Insurance – All Rights Reserved © <span id="year"></span></p>
+    <p>Phone: 0161 428 6472 | Address: 87A High Street, Cheadle, Stockport, SK8 1AA</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms &amp; Conditions</a></p>
   </footer>
 
   <script>
-    // Auto update footer year
-    document.getElementById('year').textContent = new Date()
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
