@@ -3,199 +3,146 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Totally Sports Insurance | We specialise in Sports Insurance</title>
-  <meta name="description" content="Protect Yourself Against Injury With Your Own Bespoke Sports Insurance" />
+  <title>Totally Sports Insurance | We Specialise in Sports Insurance</title>
+  <meta name="description" content="Protect yourself against injury with bespoke sports insurance. Tailored cover for players, clubs and sports enthusiasts across the UK.">
 
-  <!-- Google Font: Poppins -->
+  <!-- Google Fonts: Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- External CSS -->
-  <link rel="stylesheet" href="style.css" />
-
-  <style>
-    /* --- Base Styling --- */
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      color: #333;
-      background: #fff;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    header, nav, section, footer { width: 100%; }
-
-    /* --- Buttons --- */
-    .btn-orange {
-      background-color: #ff6600;
-      color: white;
-      padding: 0.6em 1.2em;
-      border: none;
-      border-radius: 4px;
-      font-weight: 600;
-      transition: background 0.2s ease;
-    }
-    .btn-orange:hover {
-      background-color: #e65500;
-    }
-
-    /* --- Hero Section --- */
-    .hero {
-      background: black;
-      color: white;
-      text-align: center;
-      padding: 5em 1em;
-    }
-    .hero h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.5em;
-      font-weight: 700;
-    }
-    .hero p {
-      font-size: 1.2em;
-      margin-bottom: 1em;
-      font-weight: 400;
-    }
-
-    /* --- Sections --- */
-    .section {
-      padding: 4em 1em;
-    }
-
-    /* --- Cover Grid --- */
-    .cover-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-      gap: 1.5em;
-      margin-top: 2em;
-    }
-    .cover-card {
-      background: #f9f9f9;
-      padding: 1.5em;
-      border-radius: 8px;
-      transition: box-shadow 0.2s ease;
-    }
-    .cover-card:hover {
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    /* --- Footer --- */
-    .footer {
-      background: #222;
-      color: #ccc;
-      padding: 2em 1em;
-      text-align: center;
-      font-size: 0.95em;
-    }
-    .footer a {
-      color: #ff9900;
-      font-weight: 500;
-    }
-  </style>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <!-- HEADER -->
   <header>
-    <nav style="display:flex; justify-content:space-between; align-items:center; max-width: 1200px; margin: auto; padding: 1em;">
+    <nav>
       <div class="logo">
         <a href="/">
-          <img src="images/logo.png" alt="Totally Sports Insurance" style="height: 50px; vertical-align: middle;">
-          <span style="vertical-align: middle; font-size:1.4em; font-weight:700; color: #ff6600;">Totally Sports</span>
+          <img src="images/logo.png" alt="Totally Sports Insurance" style="height: 50px;">
+          <span>Totally Sports</span>
         </a>
       </div>
-      <div class="nav-links" style="display:flex; gap:1em; font-weight:500;">
+
+      <div class="nav-links">
         <a href="#">Home</a>
         <a href="#types-of-cover">Types Of Cover</a>
         <a href="#our-mission">Our Mission</a>
         <a href="#sports-covered">Sports Covered</a>
         <a href="#faqs">FAQs</a>
       </div>
+
       <div class="cta">
         <a href="#get-quote" class="btn-orange">Get A Quote</a>
       </div>
     </nav>
   </header>
 
+  <!-- HERO SECTION -->
   <section class="hero">
     <h1>WELCOME TO TOTALLY SPORTS INSURANCE</h1>
     <p>Protect Yourself Against Injury With Your Own Bespoke Sports Insurance</p>
     <a href="#get-quote" class="btn-orange">GET A QUOTE</a>
-    <p style="margin-top:1em; font-size:1em;">0161 428 6472</p>
+    <p>0161 428 6472</p>
   </section>
 
-  <section id="types-of-cover" class="section">
-    <h2 style="text-align:center; color:#ff6600; font-weight:700;">We specialise in <strong>Sports Insurance</strong></h2>
-    <p style="text-align:center; max-width: 700px; margin: auto;">Are you invincible? – It’s inevitable that the sports we love to do will at some time or another have an impact on our lives. By giving yourself a financial safety net, we can help insure your future with a bespoke sports injury and sickness plan that does exactly what it’s supposed to when you need it most.</p>
+  <!-- TYPES OF COVER -->
+  <section id="types-of-cover">
+    <div class="container">
+      <h2 class="section-title">We specialise in <strong>Sports Insurance</strong></h2>
+      <p class="section-subtitle">
+        Are you invincible? – It’s inevitable that the sports we love to do will at some time or another have an impact on our lives.
+        By giving yourself a financial safety net, we can help insure your future with a bespoke sports injury and sickness plan that does exactly what it’s supposed to when you need it most.
+      </p>
 
-    <div class="cover-grid">
-      <div class="cover-card">
-        <h3>Motocross</h3>
-        <p>Personal injury cover starts immediately with nothing to pay today, we can arrange it for you very easily.</p>
-        <a href="#">Learn More</a>
-      </div>
-      <div class="cover-card">
-        <h3>Rugby</h3>
-        <p>Arrange rugby player insurance that gives you financial protection if you were unable to work because of injury.</p>
-        <a href="#">Learn More</a>
-      </div>
-      <div class="cover-card">
-        <h3>Mountain Biking</h3>
-        <p>Personal injury cover starts immediately with nothing to pay today, we can arrange it around your needs.</p>
-        <a href="#">Learn More</a>
+      <div class="cover-grid">
+        <div class="cover-card">
+          <h3>Motocross</h3>
+          <p>Personal injury cover starts immediately with nothing to pay today. We can arrange it for you very easily.</p>
+          <a href="#">Learn More</a>
+        </div>
+
+        <div class="cover-card">
+          <h3>Rugby</h3>
+          <p>Arrange rugby player insurance that gives you financial protection if you were unable to work because of injury.</p>
+          <a href="#">Learn More</a>
+        </div>
+
+        <div class="cover-card">
+          <h3>Mountain Biking</h3>
+          <p>Personal injury cover starts immediately with nothing to pay today. We can arrange it around your needs.</p>
+          <a href="#">Learn More</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="our-mission" class="section" style="background:#f4f4f4;">
-    <h2 style="text-align:center; color:#ff6600; font-weight:700;">OUR MISSION</h2>
-    <p style="max-width: 700px; margin: 1em auto; text-align:center;">Our mission is finding the right insurance solution for our customers. Using our expertise to find insurance that is affordable, and that provides financial peace of mind, putting your interests first in a jargon-free language.</p>
-  </section>
-
-  <section id="sports-covered" class="section">
-    <h2 style="text-align:center; color:#ff6600; font-weight:700;">SPORTS WE COVER</h2>
-    <p style="text-align:center; max-width:800px; margin:auto;">Here’s a list of the main sports that can be protected. If your sport doesn’t appear here, that doesn’t mean we can’t cover it — contact us to find out more.</p>
-    <ul style="max-width:600px; margin:2em auto; list-style:none; padding:0; columns:2; gap:1em;">
-      <li>Abseiling</li>
-      <li>American Football</li>
-      <li>Banger Racing</li>
-      <li>Baseball</li>
-      <li>BMX</li>
-      <li>Boxing</li>
-      <li>Mountain Biking</li>
-      <li>Rugby</li>
-      <li>Skateboarding</li>
-      <li>...</li>
-    </ul>
-  </section>
-
-  <section id="faqs" class="section" style="background:#f4f4f4;">
-    <h2 style="text-align:center; color:#ff6600; font-weight:700;">FAQs</h2>
-    <div style="max-width:800px; margin:auto; text-align:left;">
-      <h3>Q: How instantly can I get cover?</h3>
-      <p>A: Some cover options start immediately with nothing to pay today (depending on sport and criteria).</p>
-      <h3>Q: What if my sport isn’t listed?</h3>
-      <p>A: Even if your sport isn’t listed, contact us — we might still be able to arrange cover.</p>
+  <!-- OUR MISSION -->
+  <section id="our-mission">
+    <div class="container">
+      <h2 class="section-title">OUR MISSION</h2>
+      <p class="section-subtitle">
+        Our mission is finding the right insurance solution for our customers. Using our expertise to find insurance that is affordable and provides financial peace of mind, putting your interests first in a jargon-free language.
+      </p>
     </div>
   </section>
 
-  <section id="get-quote" class="section" style="text-align:center;">
-    <h2 style="color:#ff6600; font-weight:700;">Request a Callback / Quote</h2>
-    <form style="max-width:500px; margin:2em auto; display:flex; flex-direction:column; gap:1em;">
-      <input type="text" name="name" placeholder="Name" required style="padding:0.8em; border:1px solid #ccc; border-radius:4px;">
-      <input type="text" name="phone" placeholder="Phone" required style="padding:0.8em; border:1px solid #ccc; border-radius:4px;">
-      <input type="email" name="email" placeholder="Email" required style="padding:0.8em; border:1px solid #ccc; border-radius:4px;">
-      <textarea name="message" rows="4" placeholder="Reason for Callback / Message" style="padding:0.8em; border:1px solid #ccc; border-radius:4px;"></textarea>
-      <button type="submit" class="btn-orange">Request Callback</button>
-    </form>
+  <!-- SPORTS COVERED -->
+  <section id="sports-covered">
+    <div class="container">
+      <h2 class="section-title">SPORTS WE COVER</h2>
+      <p class="section-subtitle">
+        Here’s a list of the main sports that can be protected. If your sport doesn’t appear here, that doesn’t mean we can’t cover it — contact us to find out more.
+      </p>
+
+      <ul>
+        <li>Abseiling</li>
+        <li>American Football</li>
+        <li>Banger Racing</li>
+        <li>Baseball</li>
+        <li>BMX</li>
+        <li>Boxing</li>
+        <li>Mountain Biking</li>
+        <li>Rugby</li>
+        <li>Skateboarding</li>
+        <li>Motorsport</li>
+      </ul>
+    </div>
   </section>
 
-  <footer class="footer">
+  <!-- FAQS -->
+  <section id="faqs">
+    <div class="container">
+      <h2 class="section-title">FAQs</h2>
+
+      <div>
+        <h3>Q: How instantly can I get cover?</h3>
+        <p>A: Some cover options start immediately with nothing to pay today (depending on sport and criteria).</p>
+
+        <h3>Q: What if my sport isn’t listed?</h3>
+        <p>A: Even if your sport isn’t listed, contact us — we might still be able to arrange cover.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GET QUOTE -->
+  <section id="get-quote">
+    <div class="container">
+      <h2 class="section-title">Request a Callback / Quote</h2>
+
+      <form>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="text" name="phone" placeholder="Phone" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" rows="4" placeholder="Reason for Callback / Message"></textarea>
+        <button type="submit" class="btn-orange">Request Callback</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
     <p>Totally Sports Insurance – All Rights Reserved © <span id="year"></span></p>
     <p>Phone: 0161 428 6472 | Address: 87A High Street, Cheadle, Stockport, SK8 1AA</p>
     <p><a href="#">Privacy Policy</a> | <a href="#">Terms &amp; Conditions</a></p>
@@ -204,5 +151,6 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
