@@ -6,26 +6,99 @@
   <title>Totally Sports Insurance | We specialise in Sports Insurance</title>
   <meta name="description" content="Protect Yourself Against Injury With Your Own Bespoke Sports Insurance" />
 
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    /* quick inline theming fallback */
-    body { margin:0; font-family: Arial, sans-serif; color: #333; background: #fff; }
-    a { text-decoration: none; color: inherit; }
-    header, nav, section, footer { width:100%; }
-    .btn-orange { background-color: #ff6600; color: white; padding: 0.6em 1.2em; border: none; border-radius: 4px; }
-    .btn-orange:hover { background-color: #e65500; }
-    .hero { background: black; color: white; text-align: center; padding: 5em 1em; }
-    .hero h1 { font-size: 2.5em; margin-bottom: 0.5em; }
-    .hero p { font-size: 1.2em; margin-bottom: 1em; }
-    .section { padding: 4em 1em; }
-    .cover-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 1.5em; }
-    .cover-card { background: #f9f9f9; padding: 1.5em; border-radius: 8px; }
-    .footer { background: #222; color: #ccc; padding: 2em 1em; text-align: center; }
-    .footer a { color: #ff9900; }
-    /* etc — you’ll move these into style.css later */
-  </style>
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* --- Base Styling --- */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      background: #fff;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header, nav, section, footer { width: 100%; }
+
+    /* --- Buttons --- */
+    .btn-orange {
+      background-color: #ff6600;
+      color: white;
+      padding: 0.6em 1.2em;
+      border: none;
+      border-radius: 4px;
+      font-weight: 600;
+      transition: background 0.2s ease;
+    }
+    .btn-orange:hover {
+      background-color: #e65500;
+    }
+
+    /* --- Hero Section --- */
+    .hero {
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 5em 1em;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+      font-weight: 700;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 1em;
+      font-weight: 400;
+    }
+
+    /* --- Sections --- */
+    .section {
+      padding: 4em 1em;
+    }
+
+    /* --- Cover Grid --- */
+    .cover-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap: 1.5em;
+      margin-top: 2em;
+    }
+    .cover-card {
+      background: #f9f9f9;
+      padding: 1.5em;
+      border-radius: 8px;
+      transition: box-shadow 0.2s ease;
+    }
+    .cover-card:hover {
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* --- Footer --- */
+    .footer {
+      background: #222;
+      color: #ccc;
+      padding: 2em 1em;
+      text-align: center;
+      font-size: 0.95em;
+    }
+    .footer a {
+      color: #ff9900;
+      font-weight: 500;
+    }
+  </style>
 </head>
+
 <body>
 
   <header>
@@ -33,10 +106,10 @@
       <div class="logo">
         <a href="/">
           <img src="images/logo.png" alt="Totally Sports Insurance" style="height: 50px; vertical-align: middle;">
-          <span style="vertical-align: middle; font-size:1.4em; font-weight:bold; color: #ff6600;">Totally Sports</span>
+          <span style="vertical-align: middle; font-size:1.4em; font-weight:700; color: #ff6600;">Totally Sports</span>
         </a>
       </div>
-      <div class="nav-links" style="display:flex; gap:1em;">
+      <div class="nav-links" style="display:flex; gap:1em; font-weight:500;">
         <a href="#">Home</a>
         <a href="#types-of-cover">Types Of Cover</a>
         <a href="#our-mission">Our Mission</a>
@@ -57,9 +130,10 @@
   </section>
 
   <section id="types-of-cover" class="section">
-    <h2 style="text-align:center; color:#ff6600;">We specialise in <strong>Sports Insurance</strong></h2>
+    <h2 style="text-align:center; color:#ff6600; font-weight:700;">We specialise in <strong>Sports Insurance</strong></h2>
     <p style="text-align:center; max-width: 700px; margin: auto;">Are you invincible? – It’s inevitable that the sports we love to do will at some time or another have an impact on our lives. By giving yourself a financial safety net, we can help insure your future with a bespoke sports injury and sickness plan that does exactly what it’s supposed to when you need it most.</p>
-    <div class="cover-grid" style="margin-top:2em;">
+
+    <div class="cover-grid">
       <div class="cover-card">
         <h3>Motocross</h3>
         <p>Personal injury cover starts immediately with nothing to pay today, we can arrange it for you very easily.</p>
@@ -75,17 +149,16 @@
         <p>Personal injury cover starts immediately with nothing to pay today, we can arrange it around your needs.</p>
         <a href="#">Learn More</a>
       </div>
-      <!-- you’d continue similarly with other sports: Enduro, Football, BMX, etc. -->
     </div>
   </section>
 
   <section id="our-mission" class="section" style="background:#f4f4f4;">
-    <h2 style="text-align:center; color:#ff6600;">OUR MISSION</h2>
+    <h2 style="text-align:center; color:#ff6600; font-weight:700;">OUR MISSION</h2>
     <p style="max-width: 700px; margin: 1em auto; text-align:center;">Our mission is finding the right insurance solution for our customers. Using our expertise to find insurance that is affordable, and that provides financial peace of mind, putting your interests first in a jargon-free language.</p>
   </section>
 
   <section id="sports-covered" class="section">
-    <h2 style="text-align:center; color:#ff6600;">SPORTS WE COVER</h2>
+    <h2 style="text-align:center; color:#ff6600; font-weight:700;">SPORTS WE COVER</h2>
     <p style="text-align:center; max-width:800px; margin:auto;">Here’s a list of the main sports that can be protected. If your sport doesn’t appear here, that doesn’t mean we can’t cover it — contact us to find out more.</p>
     <ul style="max-width:600px; margin:2em auto; list-style:none; padding:0; columns:2; gap:1em;">
       <li>Abseiling</li>
@@ -102,18 +175,17 @@
   </section>
 
   <section id="faqs" class="section" style="background:#f4f4f4;">
-    <h2 style="text-align:center; color:#ff6600;">FAQs</h2>
+    <h2 style="text-align:center; color:#ff6600; font-weight:700;">FAQs</h2>
     <div style="max-width:800px; margin:auto; text-align:left;">
       <h3>Q: How instantly can I get cover?</h3>
       <p>A: Some cover options start immediately with nothing to pay today (depending on sport and criteria).</p>
       <h3>Q: What if my sport isn’t listed?</h3>
       <p>A: Even if your sport isn’t listed, contact us — we might still be able to arrange cover.</p>
-      <!-- more Q&A entries from the live site -->
     </div>
   </section>
 
   <section id="get-quote" class="section" style="text-align:center;">
-    <h2 style="color:#ff6600;">Request a Callback / Quote</h2>
+    <h2 style="color:#ff6600; font-weight:700;">Request a Callback / Quote</h2>
     <form style="max-width:500px; margin:2em auto; display:flex; flex-direction:column; gap:1em;">
       <input type="text" name="name" placeholder="Name" required style="padding:0.8em; border:1px solid #ccc; border-radius:4px;">
       <input type="text" name="phone" placeholder="Phone" required style="padding:0.8em; border:1px solid #ccc; border-radius:4px;">
