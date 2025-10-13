@@ -98,11 +98,12 @@ nav {
   border-radius: 4px;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .btn-orange:hover {
   background-color: #e65500;
+  transform: translateY(-2px);
 }
 
 /* --- Hero Section --- */
@@ -112,6 +113,7 @@ nav {
   overflow: hidden;
 }
 
+/* Fading & zooming hero animation */
 .hero::before {
   content: "";
   position: absolute;
@@ -121,8 +123,10 @@ nav {
   height: 100%;
   background-size: cover;
   background-position: center;
-  animation: heroSlider 18s infinite;
+  animation: heroFadeZoom 24s infinite ease-in-out;
   z-index: 0;
+  transition: opacity 1.5s ease-in-out, transform 8s ease-in-out;
+  transform: scale(1);
 }
 
 .hero-overlay {
@@ -154,18 +158,36 @@ nav {
 }
 
 /* --- HERO SLIDER ANIMATION --- */
-@keyframes heroSlider {
+@keyframes heroFadeZoom {
   0% {
     background-image: url('images/hero1.jpg');
+    opacity: 1;
+    transform: scale(1);
   }
   33% {
+    background-image: url('images/hero1.jpg');
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  33.1% {
     background-image: url('images/hero2.jpg');
+    opacity: 0;
+    transform: scale(1);
   }
   66% {
+    background-image: url('images/hero2.jpg');
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  66.1% {
     background-image: url('images/hero3.jpg');
+    opacity: 0;
+    transform: scale(1);
   }
   100% {
-    background-image: url('images/hero1.jpg');
+    background-image: url('images/hero3.jpg');
+    opacity: 1;
+    transform: scale(1.05);
   }
 }
 
